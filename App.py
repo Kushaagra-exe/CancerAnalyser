@@ -3,6 +3,11 @@ import tensorflow as tf
 import numpy as np
 from PIL import Image
 import pickle as pkl
+import os, sys
+import path
+
+dir = os.path.dirname(os.path.abspath(__file__))
+dir = os.path.dirname(os.path.abspath(sys.modules[__name__].__file__))
 
 
 
