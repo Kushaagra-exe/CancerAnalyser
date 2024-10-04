@@ -34,7 +34,7 @@ option = st.sidebar.selectbox(
     ['Lung Cancer', 'Colon Cancer', 'Brain Tumor']
 )
 if option == 'Lung Cancer':
-    path = 'lung.pkl'
+    path = 'Models\lung.pkl'
     img_size = (224, 224)
     class_names = ['Cancer not detected', 'Lung_Adenocarcinoma', 'Lung_Squamous_Carcinoma']
     st.sidebar.write("Accuracy: 92.15%")
@@ -44,7 +44,7 @@ if option == 'Lung Cancer':
 
 
 elif option == 'Colon Cancer':
-    path = 'colon_model.pkl'
+    path = 'Models\colon_model.pkl'
     img_size=(180, 180)
     class_names = ['Colon adenocarcinoma', 'Colon benign tissue']
     st.sidebar.write("Accuracy: 96.39%")
@@ -52,7 +52,7 @@ elif option == 'Colon Cancer':
     st.sidebar.write("Recall: 0.964")
 
 elif option == 'Brain Tumor':
-    path = 'brain_tumour.pkl'
+    path = 'Models\\brain_tumour.pkl'
     img_size = (224, 224)
     class_names = ['Glioma', 'Meningioma', 'No_Tumor' , 'Pituitary']
     st.sidebar.write("Accuracy: 89.43%")
